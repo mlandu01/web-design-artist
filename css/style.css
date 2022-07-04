@@ -1,0 +1,333 @@
+* {
+	box-sizing: border-box;
+}
+
+
+html, body {
+	
+	 margin: 0;
+	 padding: 0;
+	 font-family: "Trebuchet MS", sans-serif;
+}
+
+
+/* MOBILE VERSION */
+
+
+@media only screen and (max-width: 600px) {
+     
+ .header {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	/*height: 150px;*/
+	align-items: center;
+	/*margin-left: 150px;*/
+	background-color: lightblue;
+}
+
+.header {
+	display: none;
+}
+
+.artist-name {
+	font-family: ;
+	font-size: 2em;
+}
+
+.hamburger, .close {
+	font-size: 2rem;
+	color: #00bff3;
+}
+
+#gallery-title {
+	text-align: center;
+}
+
+.sub-heading {
+	display: none;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar-tablet {
+	display: none;
+}
+
+#mobile-navbar {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+
+
+	/* position close button and navbar */ 
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	background-color: black;
+
+	/* animate slide up and down */
+
+	transform: translateY(-100%);
+	transition: 0.2s ease;
+}
+
+#mobile-navbar:target {
+    transform: translateY(0);
+}
+
+#mobile-navbar a {
+	text-decoration: none;
+}
+
+.mobile-navbar {
+    text-align: center;
+}
+
+.mobile-navbar a {
+	text-decoration: none;
+	color: black;
+}
+
+.mobile-navbar ul {
+	list-style-type: none;
+}
+
+.mobile-navbar li {
+	display: inline;
+	margin-right: 50px;
+}
+
+.mobile-navbar a:hover {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+	text-align: center;
+	width: 90%;
+	margin: auto;
+}
+
+.image-item {
+	margin-bottom: 50px;
+} 
+
+.image-item-one {
+	margin-bottom: 50px;
+}
+
+.bottom-link {
+	text-align: center;
+}
+
+.bottom-link-one {
+	display: none;
+}
+
+}
+
+
+
+
+
+
+
+/*TABLET */
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+
+  .header {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 150px;
+	align-items: center;
+	/*margin-left: 150px;*/
+	/*background-color: lightpink;*/
+}
+
+.new-header {
+	display: none;
+}
+
+.artist-name {
+	display: none;
+}
+
+.fa-solid {
+	display: none;
+}
+
+.sub-heading {
+	display: none;
+}
+
+#gallery-title {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.navbar {
+	display: none;
+}
+
+.navbar-tablet li {
+	display: inline;
+	margin-right: 50px;
+}
+
+.navbar-tablet a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar-tablet a:hover {
+	color: rgba(0, 0, 0, 0.5);
+	/*color: black;*/
+}
+
+.navbar-tablet {
+    text-align: center;
+}
+
+.mobile-navbar {
+	display: none;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.flex-item {
+	text-align: center;
+}
+
+/*.flex-item:nth-child(1) {
+    margin-right: 190px;
+}
+
+.image-item {
+	margin-left: 190px;
+	margin-bottom: 50px;
+} 
+
+.image-item-one {
+	margin-bottom: 50px;
+}*/
+
+.bottom-link {
+	display: none;
+}
+
+.bottom-link-one {
+	text-align: center;
+}
+
+}
+
+/*Desktop version */
+
+@media only screen and (min-width: 1200px) {
+
+.header {
+	display: flex;
+	width: 80%;
+	height: 150px;
+	align-items: center;
+	margin-left: 150px;
+}
+
+.new-header {
+	display: none;
+}
+
+.artist-name {
+	display: none;
+}
+
+.fa-solid {
+	display: none;
+}
+
+.sub-heading {
+	width: 50%;
+	margin-left: 425px;
+}
+
+#gallery-title {
+	display: none;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar a:hover {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+	list-style-type: none;
+}
+
+.navbar li {
+	margin-bottom: 30px;
+}
+
+.navbar-tablet {
+	display: none;
+}
+
+.mobile-navbar {
+	display: none;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.flex-item:nth-child(1) {
+    margin-right: 100px;
+}
+
+.image-item {
+	margin-left: 190px;
+	margin-bottom: 50px;
+} 
+
+.image-item-one {
+	margin-bottom: 50px;
+}
+
+.bottom-link {
+	width: 50%;
+	margin-left: 425px;
+	display: none;
+}
+
+.bottom-link-one {
+	width: 50%;
+	margin-left: 425px;
+	text-decoration: none;
+}
+
+}
